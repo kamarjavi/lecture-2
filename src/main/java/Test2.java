@@ -20,8 +20,9 @@
         WebElement dashboard = driver.findElement(By.id("tab-AdminDashboard"));
         dashboard.click();
         String s = new String(driver.getTitle());
+        System.out.println(s);
         driver.navigate().refresh();
-        pause(8000);
+        pause(3000);
         String s1 = new String(driver.getTitle());
         if ( s.equals(s1)) System.out.println("После перезагрузки страницы пользователь остался в разделе 'Dashboard'");
         else System.out.println("После перезагрузки страницы пользователь не остался в разделе 'Dashboard'");
@@ -29,8 +30,9 @@
         WebElement orders = driver.findElement(By.id("subtab-AdminParentOrders"));
         orders.click();
         s = driver.getTitle();
+        System.out.println(s);
         driver.navigate().refresh();
-        pause(8000);
+        pause(3000);
         s1 = driver.getTitle();
         if ( s.equals(s1)) System.out.println("После перезагрузки страницы пользователь остался в разделе 'Заказы'");
         else System.out.println("После перезагрузки страницы пользователь не остался в разделе 'Заказы'");
@@ -38,6 +40,7 @@
         WebElement catalog = driver.findElement(By.id("subtab-AdminCatalog"));
         catalog.click();
         s = driver.getTitle();
+        System.out.println(s);
         driver.navigate().refresh();
         pause(3000);
         s1 = driver.getTitle();
@@ -47,6 +50,7 @@
         WebElement customer = driver.findElement(By.cssSelector("li.link-levelone:nth-child(5)"));
         customer.click();
         s = driver.getTitle();
+        System.out.println(s);
         driver.navigate().refresh();
         pause(3000);
         s1 = driver.getTitle();
@@ -56,6 +60,7 @@
         WebElement customers_threads = driver.findElement(By.id("subtab-AdminParentCustomerThreads"));
         customers_threads.click();
         s = driver.getTitle();
+        System.out.println(s);
         driver.navigate().refresh();
         pause(3000);
         s1 = driver.getTitle();
@@ -65,6 +70,7 @@
         WebElement admin_stats = driver.findElement(By.id("subtab-AdminStats"));
         admin_stats.click();
         s = driver.getTitle();
+        System.out.println(s);
         driver.navigate().refresh();
         pause(3000);
         s1 = driver.getTitle();
@@ -74,6 +80,7 @@
         WebElement modules = driver.findElement(By.id("subtab-AdminParentModulesSf"));
         modules.click();
         s = driver.getTitle();
+        System.out.println(s);
         driver.navigate().refresh();
         pause(3000);
         s1 = driver.getTitle();
@@ -83,6 +90,7 @@
         WebElement design = driver.findElement(By.cssSelector("li.link-levelone:nth-child(10)"));
         design.click();
         s = driver.getTitle();
+        System.out.println(s);
         driver.navigate().refresh();
         pause(3000);
         s1 = driver.getTitle();
@@ -92,6 +100,7 @@
         WebElement shipping = driver.findElement(By.id("subtab-AdminParentShipping"));
         shipping.click();
         s = driver.getTitle();
+        System.out.println(s);
         driver.navigate().refresh();
         pause(3000);
         s1 = driver.getTitle();
@@ -101,6 +110,7 @@
         WebElement payment = driver.findElement(By.id("subtab-AdminParentPayment"));
         payment.click();
         s = driver.getTitle();
+        System.out.println(s);
         driver.navigate().refresh();
         pause(3000);
         s1 = driver.getTitle();
@@ -110,6 +120,7 @@
         WebElement international = driver.findElement(By.id("subtab-AdminInternational"));
         international.click();
         s = driver.getTitle();
+        System.out.println(s);
         driver.navigate().refresh();
         pause(3000);
         s1 = driver.getTitle();
@@ -119,6 +130,7 @@
         WebElement shop_parameters = driver.findElement(By.id("subtab-ShopParameters"));
         shop_parameters.click();
         s = driver.getTitle();
+        System.out.println(s);
         driver.navigate().refresh();
         pause(3000);
         s1 = driver.getTitle();
@@ -128,6 +140,7 @@
         WebElement configuration = driver.findElement(By.id("subtab-AdminAdvancedParameters"));
         configuration.click();
         s = driver.getTitle();
+        System.out.println(s);
         driver.navigate().refresh();
         pause(3000);
         s1 = driver.getTitle();
